@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g_background"
+    tools:context=".G.G.VisitingGActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_g1">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:showDividers="middle"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="身分證字號"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/PidRG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/TWRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="本國籍" />
+
+                        <RadioButton
+                            android:id="@+id/OSRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:checked="false"
+                            android:text="外國籍" />
+                    </RadioGroup>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/PidET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:hint="請先選擇國籍身分"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColorHint="#AAAAAA"
+                        app:met_baseColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="初次預約需填寫以下資料"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="受檢者"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <me.grantland.widget.AutofitLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/NamET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="姓名"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColorHint="#AAAAAA"
+                            app:met_baseColor="#000000"
+                            app:met_clearButton="true" />
+                    </me.grantland.widget.AutofitLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="電話號碼"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <me.grantland.widget.AutofitLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/PhoneET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="手機/市話"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textColorHint="#AAAAAA"
+                            app:met_baseColor="#000000"
+                            app:met_clearButton="true" />
+                    </me.grantland.widget.AutofitLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="電子信箱"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <me.grantland.widget.AutofitLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/EmailET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:hint="電子郵件信箱"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColorHint="#AAAAAA"
+                            app:met_baseColor="#000000"
+                            app:met_clearButton="true" />
+                    </me.grantland.widget.AutofitLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="性別"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/SexRG"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/mlRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false"
+                            android:text="男性" />
+
+                        <RadioButton
+                            android:id="@+id/fmlRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:checked="false"
+                            android:text="女性" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:text="生日"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/BirthDayTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_g1_selector"
+                        android:gravity="center_vertical"
+                        android:hint="點擊選擇生日"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColorHint="#AAAAAA"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="地址"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <me.grantland.widget.AutofitLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/AddressET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:hint="寄送紙本報告地址"
+                            android:inputType="textMultiLine"
+                            android:singleLine="false"
+                            android:textColorHint="#AAAAAA"
+                            app:met_baseColor="#000000"
+                            app:met_clearButton="true" />
+                    </me.grantland.widget.AutofitLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="公司名稱"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/CompanyTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_g1_selector"
+                        android:ems="9"
+                        android:gravity="center_vertical"
+                        android:hint="點擊選擇公司"
+                        android:maxLines="2"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColorHint="#AAAAAA"
+                        android:textSize="18sp" />
+                </TableRow>
+
+            </TableLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/nextBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_selector_g_btn"
+            android:textColor="@color/g_btn_text_color"
+            android:textSize="18sp"
+            android:text="下一步" />
+    </LinearLayout>
+</ScrollView>

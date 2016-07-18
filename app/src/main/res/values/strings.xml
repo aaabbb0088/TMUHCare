@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">臺北醫學大學附設醫院</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="appointment1">掛號預約</string>
+    <string name="appointment2">掛號預約查詢</string>
+
+    <string name="examination1">健檢預約</string>
+    <string name="examination2">健檢預約查詢</string>
+    <string name="examination3">健檢報告書</string>
+    <string name="examination4">健檢方案介紹</string>
+    <string name="examination5">健檢小常識</string>
+
+    <string name="PSPName">請選擇健檢方案</string>
+    <string name="CSP1Name">請選擇貴公司名稱</string>
+    <string name="CSP2Name">請選擇健檢方案</string>
+
+    <string name="waitingDataStr">資料處理中…</string>
+    <string name="getDataErrorMsg">系統發生錯誤，請稍後再操作</string>
+    <string name="cancelExamMsg">已成功取消預約</string>
+    <string name="callingStr">撥號中，請稍後…</string>
+    <string name="finishQisStr">已完成健檢問卷</string>
+    <string name="unfinishQisStr">尚未完成健檢問卷</string>
+
+    <string name="getDataErrorMsg_oneday">您已於當日預約其他健檢方案，\n請重新選擇預約日期</string>
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g_background"
+    tools:context=".G.G.VisitingG2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_g1">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="方案類型　"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical" />
+
+                    <RadioGroup
+                        android:id="@+id/PCRG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/PRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="個人健檢" />
+
+                        <RadioButton
+                            android:id="@+id/CRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:checked="false"
+                            android:text="公司特約" />
+                    </RadioGroup>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="健檢方案"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/PProjectTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_column="1"
+                        android:background="@drawable/bg_g2_selector"
+                        android:ems="9"
+                        android:gravity="center_vertical"
+                        android:hint="PProjectTV"
+                        android:maxLines="2"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="特約身分"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/CompanyNameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_column="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:ems="8"
+                        android:gravity="center_vertical"
+                        android:hint="CompanyNameTV"
+                        android:maxLines="2"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="健檢方案"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/CProjectTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_column="1"
+                        android:background="@drawable/bg_g2_selector"
+                        android:ems="9"
+                        android:gravity="center_vertical"
+                        android:hint="CProjectTV"
+                        android:maxLines="2"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="預約日期　"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/DateTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_g2_selector"
+                        android:gravity="center_vertical"
+                        android:hint="點擊選擇日期"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+            </TableLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/nextBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_selector_g_btn"
+            android:textColor="@color/g_btn_text_color"
+            android:textSize="18sp"
+            android:text="送出預約" />
+
+    </LinearLayout>
+
+</LinearLayout>

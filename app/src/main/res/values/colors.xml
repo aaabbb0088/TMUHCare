@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E90FF</color>
+    <color name="colorPrimaryLight">#5FD4FF</color>
+    <color name="colorPrimaryDark">#0B60CC</color>
+    <color name="colorAccent">#003377</color>
+    <color name="colorAccent2">#FF4081</color>
+    <color name="colorTabClicked">#1E90FF</color>
+    <color name="font_paint_color">#00003C</color>
+</resources>
